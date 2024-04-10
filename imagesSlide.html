@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Image Slider</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+      <!-- Image Wrapper -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/apple phone.jpg" alt="Image 1">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/3.jpg" alt="Image 2">
+        </div>
+        <div class="carousel-item">
+          <img src="./images/2.jpg" alt="Image 3">
+        </div>
+        <!-- Add more images as needed -->
+      </div>
+    </div>
+  </div>
+<script>
+    // Auto slide interval in milliseconds (adjust as needed)
+    const autoSlideInterval = 3000; // 3 seconds
+
+    // Start the auto slider when the page is loaded
+    document.addEventListener('DOMContentLoaded', function() {
+      const carousel = document.getElementById('imageCarousel');
+      const carouselInstance = new bootstrap.Carousel(carousel, {
+        interval: autoSlideInterval,
+      });
+    });
+  </script> 
+</body>
+</html>

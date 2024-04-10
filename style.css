@@ -1,0 +1,366 @@
+* {
+  margin: 5px;
+}
+body {
+  align-items: center;
+  align-content: center;
+  padding: 0;
+  margin: 0%;
+}
+.form-group {
+  padding: 10px;
+  max-width: 50%;
+  height: auto;
+}
+.form-group input {
+  max-width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.container {
+  align-items: center;
+  align-content: center;
+  max-width: 100%;
+  height: 100%;
+  position: relative;
+}
+.container button {
+  width: 600px;
+}
+.inner-container {
+  background-color: white;
+  height: auto;
+  width: 50%;
+  margin: 6% auto;
+  position: relative;
+}
+.inner-container h4 {
+  margin-left: 42%;
+}
+.header {
+  background: rgba(128, 128, 128, 0.593);
+  position: relative;
+  padding: 10px;
+}
+.card-body img {
+  width: 150px;
+}
+.nav li a {
+  color: black;
+  margin-left: 100px;
+}
+.card .row {
+  width: 200px;
+  margin: 10px;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+.container-sm table {
+  padding: 10px;
+}
+.container-sm table tr td {
+  padding: 15px;
+  border-spacing: 10px;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+.container-sm {
+  float: right;
+  margin-left: 30%;
+  z-index: -50px;
+  margin-top: 7%;
+  align-items: center;
+  align-content: center;
+  position: relative;
+}
+.container-sm:checked {
+  z-index: -20%;
+}
+/*side bar design*/
+.side-bar {
+  width: 13%;
+  height: 650px;
+  margin-top: 7%;
+  position: fixed;
+  overflow-y: scroll;
+  border-right: 2px solid rgba(0, 0, 0, 0.223);
+}
+.side-bar ul {
+  margin-top: 10%;
+  list-style: none;
+  text-decoration: none;
+  padding: 20px;
+}
+.side-bar ul li {
+  list-style: none;
+  text-decoration: none;
+  padding: 20px;
+}
+.side-bar ul li a {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+.side-bar ul li a:hover {
+  background: azure;
+  width: 18%;
+  height: 12%;
+  padding: 12px;
+  border-radius: 8px;
+}
+.nav button {
+  float: left;
+  background: rgba(0, 128, 0, 0.43);
+  margin-left: -95%;
+}
+.nav button:hover {
+  background: rgba(210, 105, 30, 0.511);
+  padding: 18px;
+}
+
+/*slide notes div*/
+.container-left {
+  background: gray;
+  width: 47%;
+  border: 2px solid black;
+  position: fixed;
+}
+.container-inner-left {
+  background: white;
+  border: 1px solid gray;
+  width: 47%;
+  position: fixed;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  overflow: scroll;
+  height: 80%;
+}
+
+.container-right {
+  background: gray;
+  width: 47%;
+  border: 2px solid black;
+  position: fixed;
+  float: right;
+  margin-left: 50%;
+}
+.container-inner-right {
+  background: white;
+  border: 1px solid gray;
+  width: 47%;
+  position: fixed;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  overflow: scroll;
+  height: 80%;
+}
+.bottom {
+  background: rgba(128, 128, 128, 0.189);
+  margin-top: 42%;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+.header1 h1 {
+  margin-top: -25%;
+  margin-right: 10%;
+}
+.header h2{
+    margin-left: -50%;
+}
+#navbarSupportedContent ul li {
+  float: right;
+}
+
+#navbar ul li {
+  float: right;
+}
+marquee.heading {
+    transform: 15s;
+   animation: colored 15s infinite;
+  -webkit-animation: colored 15s infinite;
+   animation-delay: 1s;
+
+}
+@keyframes colored {
+  0% {
+    color: black;
+  }
+  30% {
+    color:red;
+  }
+  60% {
+    color:blue;
+  }
+  90%{
+    color: green;
+  }
+}
+
+.container-fluid1 .table-responsive {
+  background: gray;
+  width: 1000px;
+  max-width: 100%;
+  position: absolute;
+}
+.card:hover {
+  transition: 2s;
+  transform: scale(1.1);
+  z-index: 2;
+}
+.para {
+  margin-left: 50%;
+  width: 230px;
+  margin-top: -31%;
+}
+/*home page image slider*/
+.container-xxl {
+  overflow: hidden;
+  max-width:fit-content;
+  background-position: center;
+  background-size: cover;
+  height: 50%;
+  
+}
+.slider {
+  display: flex;
+  animation: background-image 30s infinite;
+  height: 80%;
+  position: absolute;
+  
+}
+.slider img {
+  width: 100%;
+  height: auto;
+}
+@keyframes background-image {
+  5% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  40% {
+    transform: translateX(-200%);
+  }
+  50% {
+    transform: translateX(-300%);
+  }
+  60% {
+    transform: translateX(-400%);
+  }
+  70% {
+    transform: translateX(-500%);
+  }
+  80% {
+    transform: translateX(-600%);
+  }
+  90% {
+    transform: translateX(-600%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* pop up design*/
+.popup {
+  width: 20%;
+  height: 250px;
+  position: relative;
+  background: gray;
+  margin-top: -18%;
+  transform: translate (-50%, -50%) scale(1.3);
+  visibility: hidden;
+  transition: transform 2s, top 2s;
+  border-radius: 6px;
+  margin: 6% auto;
+}
+.popup button[type="submit"] {
+  background: green;
+  padding: 5px;
+  width: 20%;
+  margin-left: 40%;
+  margin-top: 30%;
+}
+#img {
+  border-radius: 24px;              
+  
+  box-shadow: aquamarine 2px;
+  margin-top: -8%;
+  margin-left: 40%;
+  width: 50px;
+}
+.popup p {
+  line-height: 10%;
+  padding: 5px;
+  font-style: italic;
+  text-transform: capitalize;
+  justify-content: center;
+}
+.popup p,
+h1 {
+  justify-content: center;
+  text-align: center;
+}
+/* logo design*/
+.img_logo{
+  width:50px;
+}
+
+/*hovered element design*/
+#form input{
+  position: relative;
+  display: inline-block;
+}
+.para1{
+  position: absolute;
+  color: black;
+  top:5;
+  left:3;
+  transform: scale(1.0);
+  box-shadow: border-box;
+  z-index: 2;
+  visibility: hidden; 
+}
+.container-lg{
+  overflow: hidden;
+}
+.container-wrapper{
+  background-color: gray;
+  align-items: center;
+  align-content: center;
+  width: 30%;
+  margin: 6% auto;
+}
+
+.carousel-item{
+  width:20%;
+  height:30%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+.carousel-item img{
+  width: 300px;
+  height: 250px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0.8;
+  filter: grayscale(100%);
+  transition: 0.5s;
+}
+
+.container-lg .card > a{
+  text-decoration: none;
+}

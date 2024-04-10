@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./scrip.js"></script>
+    <style type="text/css">
+        .body{
+            margin: 0;
+            padding: 0;
+
+        }
+        .header{
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        .footer{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+   <header class="header"><h1>FRONTEND WEB DEVELOPMENT</h1></header> 
+    <figure src="www.png">
+        <figcaption>world wide web</figcaption>
+    </figure>
+    <hr>
+    <ul>
+        <li>Html5</li>
+        <li>CSS</li>
+        <li>javaScript</li>
+        <li>JQuery</li>
+        <li>Bootstrap</li>
+        
+    </ul>
+    <center>
+<footer class="footer">
+    <h1>Prepared by CP221 Instructors  &copy; 2023</h1>
+</footer>
+</center>
+<!--question number 5-->
+<form  id="form">
+<input type="text" name="petName" placeholder="enter pet name"> 
+<input type="text" name="petType" placeholder="enter pet type"> 
+<select name="petgreed">
+    <option value="True">True</option>
+    <option value="False">False</option>
+</select>
+<button type="submit" id="button">submit</button>
+</form>
+<iframe src="index.html" width="100%" height="1000px"></iframe>
+ </div>
+ <script>
+    //script for question number 5
+    $(document).ready(function (){
+        $("#colorDiv").css("background-color", "green")
+        $("myImage").src = "landscape.jpg";
+
+    });
+    var form = document.getElementById("form");
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const url = "summary.html";
+
+        const formData = new FormData(form);
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", url, true);
+        xhr.onload = function() {
+            if(xhr.status == 200) {
+                console.log(xhr.responseText);
+                window.location.href= url;
+            }
+            else{
+                console.log("Failed to send data to " +url);
+            }
+        };
+        xhr.send(formData);
+    });
+    //script for qn 5 b
+    var myTable = document.getElementById("myTable");
+    var rows = myTable.getElementsByTagName("tr");
+    for(var i=0; i<rows.length; i++){
+        if(rows[i] / 2 ==0){
+            rows.innerHTML = rows[i];
+          var  td = rows.createElement("td");
+            rows.appendChild(td).innerHTML = "This is even";
+        }
+        else if(rows[i] % 2 == 1){
+         rows.innerHTML = rows[i];
+          var  td = rows.createElement("td");
+            rows.appendChild(td).innerHTML = "This is old";
+        }
+    }
+ </script>
+</body>
+</html>
