@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="scrip.js"></script>
+    <script src="jQuery.js"></script>
+    <script src="assets/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    id: <h1 id="h1"></h1>
+    name: <h2 id="h2"></h2>
+
+    category: <h3 id="h3"></h3>
+
+</body>
+<script>
+    $(document).ready(function() {
+    var id= $('3h1');
+    var name= $('#h2');
+    var category= $('#h3');
+
+    $(document).on('load', function(e) {
+        e.preventDefault();
+      $.ajax({
+        url: 'accessory.html',
+        type: 'POST',
+        data: {id:id, category:category, name:name},
+        success: function(data, status) {
+            id.html(data.id);
+            name.html(data.name);
+            category.html(data.category);
+        },
+        error: function(data) {
+        alert('Something went wrong');
+        },
+      })
+    })
+    });
+</script>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>response page</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="scrip.js"></script>
+    <script src="jQuery.js"></script>
+    <script src="assets/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    />
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap-grid.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap-utilities.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap-utilities.min.css" rel="stylesheet" />
+    <!-- FONT AWESOME STYLE  -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap-utilities.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $("#name").val(localStorage.getItem("name"));
+        $("#email").val(localStorage.getItem("email"));
+        $("#date").val(localStorage.getItem("date"));
+        $("#subject").val(localStorage.getItem("subject"));
+        $("#message").val(localStorage.getItem("message"));
+
+        $("button").click((e)=>{
+          window.confirm("response has been sent");
+          window.location= ("/Home.html");
+        })
+      })
+    </script>
+</head>
+<body style="background-color: rgba(165, 42, 42, 0.215);">
+    <div class="container-wrapper">
+      <div class="header-wrapper"><strong>FeedBack Form</strong></div>
+   <form class="form-responsive">
+    <div class="form-group">
+    <input class="form-control" type="text" name="name" id="name" required>
+    </div>
+
+    <div class="form-group">
+      <input class="form-control" type="text" name="email" id="email" required>
+      </div>
+      <div class="form-group">
+        <input class="form-control" type="text" name="date" id="date" required>
+        </div>
+        <div class="form-group">
+          <input class="form-control" type="text" name="subject" id="subject" required>
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="text" name="message" id="message" required>
+            </div>
+   </form>
+   <center><button class="btn btn-info">Accept</button></center>
+    </div>
+</body>
+</html>
